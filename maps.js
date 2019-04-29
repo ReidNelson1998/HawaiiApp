@@ -10,7 +10,7 @@ function initMap(){
     zoom: 6,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   });
-  infoWindow = new google.maps.infoWindow;
+  infoWindow = new google.maps.InfoWindow;
   updateLocations();
 }
 function updateLocations(){
@@ -35,7 +35,7 @@ function addMarker(map, location){
   var contentString = '<div class="info-window" id="clickableItem"> ' +
   '<h3>' + location.title + '</h3>' +
   '<div class="info-content">' +
-  '<img src=' + location.picture + ' alt="picture" style="width:30px; height:30px; padding: 20px, 20px, 20px, 20px;"'> +
+  '<img src=' + location.picture + ' alt="picture" style="width:30px; height:30px; padding: 20px, 20px, 20px, 20px;">' +
   '<p>' + location.content + '</p>' +
   '</div>' +
   '</div>';
